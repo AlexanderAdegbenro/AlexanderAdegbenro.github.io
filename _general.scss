@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-size: 18px;
+    background: $color1;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    height: 100%;
+
+  
+    &.active {
+      overflow: hidden;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .mobile-top-navigation-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $color3;
+    z-index: 350;
+    width: 100%;
+    height: 70px;
+  
+    .mobile-logo {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 600;
+      width: 60px;
+      height: 50px;
+      border: 5px solid black;
+      color: black;
+      text-align: center;
+      line-height: 2;
+      margin: 10px;
+    }
+  
+    .mobile-open-menu-icon {
+      width: 60px;
+      height: 50px;
+      color: black;
+      top: 10px;
+      right: 10px;
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      float: right;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+  
+      .fas {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  // We are styling the .hamburger-icon, .primary-btn, and .ghost-btn buttons from the #content-area section in this main.scss file, instead of the _home.scss file, because we might use them in other places as well.
+  
+  .open-menu-icon {
+    z-index: 10;
+  
+    .fas {
+      color: $color3;
+    }
+  }
+  
+  .icon-properties {
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    cursor: pointer;
+  
+    // You want to add this padding around the .hamburger-icon button so that users don't have to click on the button exactly right on top.  You also want to change the top and right values by removing 20px from each, which was the amount added by the padding.  This way your button does not change its location.
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+  
+    .fas {
+      font-size: 2rem;
+    }
+  }
+  
+  .primary-btn {
+    background: $color1;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 5%;
+    text-align: center;
+    color: $color3;
+    padding: 15px 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: $btnTransitions;
+  
+    &:hover {
+      background: white;
+    }
+  }
+  
+  .ghost-btn {
+    border: 4px solid $color5;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 5%;
+    text-align: center;
+    color: $color3;
+    padding: 10px 26px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: $btnTransitions;
+  
+    &:hover {
+      border-color: black;
+      color: white;
+      background: $color3;
+    }
+  }
+  
+  .primary-btn,
+  .ghost-btn {
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #opened-menu {
+    background: $color2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    transform: translate3d(-100%, 0, 0);
+    z-index: 360;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  
+    .close-menu-icon {
+      z-index: 12;
+  
+      .fa-times {
+        color: white;
+  
+        &:hover {
+          color: $color5;
+        }
+      }
+    }
+  
+    &.active {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    nav {
+      width: 400px;
+      text-align: center;
+  
+      a {
+        font-size: 2.3rem;
+        padding: 1rem;
+        display: block;
+        color: black;
+  
+        &:hover {
+          color: $color5;
+        }
+      }
+    }
+  }
+  
+  .scroll-section {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 56px;
+  }
+  
+  @media (max-width: 767px) {
+    .open-menu-icon {
+      display: none;
+    }
+  
+    .mobile-top-navigation-bar {
+      display: block;
+    }
+  
+    #opened-menu {
+      .close-menu-icon {
+        top: 0;
+        right: 0;
+      }
+    }
+  
+    .info-section {
+      display: none;
+    }
+  
+    .content-area {
+      .scroll-section {
+        padding: 106px 56px 56px;
+      }
+    }
+  }

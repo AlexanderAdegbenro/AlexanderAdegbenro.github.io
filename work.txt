@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+
+    <title></title>
+    <link rel="stylesheet"  href="./scss/main.css" />
+
+  </head>
+
+  <body class="Work">
+    <div class="open-menu-icon icon-properties">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="mobile-top-navigation-bar">
+      <a href="./index.html"><div class="mobile-logo">Alexander</div></a>
+      <div class="mobile-open-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <section id="opened-menu">
+      <div class="close-menu-icon icon-properties">
+        <i class="fas fa-times"></i>
+      </div>
+      <nav>
+        <a href="./index.html" class="opened-menu-btn">Home</a>
+        <a href="./work.html" class="opened-menu-btn">Portfolio</a>
+        <a href="./resume.html" class="opened-menu-btn">Resume</a>
+        <a href="./contact.html" class="opened-menu-btn">Contact</a>
+      </nav>
+    </section>
+
+
+<section class="info-section">
+  <div class="scroll-section">
+
+
+    <div class="logo"   onclick="window.location.href= 'index.html'" >Alexander</div>
+
+  </div>
+<div class="info-box">
+  <h4>Email</h4>
+  <p>Adegbenroalexander15<br></p>
+  <p>@gmail.com</p>
+
+
+
+  <h4>Phone</h4>
+  <p>646-853-8208</p>
+  <h4>Find Me On</h4>
+  <div class="icon-section">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+  <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+
+  </div>
+
+</div>
+</section>
+
+
+
+<section class="content-area">
+
+  <div class="title">
+    <h1>Latest Works</h1>
+  </div>
+<div class="Project-section">
+
+  <div class="Project-box" onclick="window.location.href= 'https://foodorderingproject.com/'"    style=" background:url('/src/img/Screen Shot 2020-10-17 at 1.45.42 AM.png')no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+  <div class="grey-bg">
+  <div class="Project-info">
+  <div class="Project-details">
+    client: Nike Year: 2019 Type: Ecommerce
+
+  </div>
+ 
+  <div class="Project-title">
+    The last Yeezys
+
+  </div>
+  <i class="fas fa-long-arrow-alt-right"  ></i>
+
+  </div>
+</div>
+
+</div>
+
+<div class="Project-box" onclick="window.location.href= 'https://alexanderadegbenro.github.io/Four-Card-Challenge-ByFrontEnd-Mentor/ '"style=" background:url('/src/img/Screen Shot 2020-10-24 at 12.32.00 AM.jpg')no-repeat center center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+
+<div class="grey-bg">
+<div class="Project-info">
+<div class="Project-details">
+  client: Nike Year: 2019 Type: Ecommerce
+
+</div>
+
+<div class="Project-title">
+  The last Yeezys
+
+</div>
+
+<i class="fas fa-long-arrow-alt-right"></i>
+
+</div>
+</div>
+
+</div>
+
+
+
+-30 at 12.30.09 AM.jpg
+<div class="Project-box" onclick="window.location.href= 'https://alexanderadegbenro.github.io/personal-site/'" style=" background: url('/src/img/Screen Shot 2020-10') no-repeat center center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+
+<div class="grey-bg">
+<div class="Project-info">
+<div class="Project-details">
+  client: Lush Bank Year: 2018 Type:Bank
+
+</div>
+
+<div class="Project-title">
+  Will Your Savings see you through?
+
+</div>
+
+<i class="fas fa-long-arrow-alt-right"></i>
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="Project-box" onclick="window.location.href= ' https://alexanderadegbenro.github.io/TinDog-Website/'" style=" background:url('/src/img/Screen Shot 2020-10-24 at 12.35.11 AM.png') no-repeat center center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+
+<div class="grey-bg">
+<div class="Project-info">
+<div class="Project-details">
+  client: Nike Year: 2019 Type: Ecommerce
+
+</div>
+
+ <div class="Project-title">
+  The last Yeezys
+
+ </div>
+
+<i class="fas fa-long-arrow-alt-right"></i>
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+  
+</section>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/f56bafc0c7.js" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+  </body>
+</html>

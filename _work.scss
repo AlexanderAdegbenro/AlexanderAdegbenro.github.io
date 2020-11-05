@@ -1,0 +1,311 @@
+.work {
+    .menu-icon {
+      .fa-times {
+        display: none;
+      }
+    }
+  
+    .info-section {
+      width: 20%;
+    }
+  
+    .content-area {
+      background: $color3;
+      margin-left: 20%;
+      width: 80%;
+      min-width: 300px;
+      background: #02A6ED;
+      height: 100%;
+      // This is a trick of removing the padding from the .content-area selector in this .scss file and putting it inside the .scroll-section selector inside of the main.scss file.
+      overflow: hidden;
+  
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+  
+      .work-section {
+        margin-bottom: 56px;
+  
+        h1 {
+          font-weight: 700;
+          font-size: 2rem;
+          text-transform: uppercase;
+          margin-bottom: 56px;
+        }
+  
+        .project-section {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: calc(100% - 112px);
+          margin-left: 56px;
+          
+  
+          .project-box {
+            position: relative;
+            padding: 30px;
+            margin-top: 25px;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            -webkit-background-size:cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            height: 400px;
+            margin-left: 25px;
+           border-radius: 7%;
+  
+            &:hover {
+              -webkit-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+              -moz-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+              box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+            }
+  
+            .grey-bg {
+              background: #ffb403;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+              overflow: hidden;
+  
+              &:hover {
+                opacity: 0.9;
+  
+                .project-info {
+                  .project-details {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                  }
+  
+                  .project-title {
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                  }
+                }
+              }
+  
+              .project-info {
+                padding: 56px;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+  
+                .project-details {
+                  position: relative;
+                  font-size: 1.1rem;
+                  margin: 0 0 1rem;
+                  transform: translate3d(-200px, 0, 0);
+                  opacity: 0;
+                  transition: all 0.3s ease-in;
+                }
+  
+                .project-title {
+                  font-size: 1.8rem;
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  transform: translate3d(-100px, 0, 0);
+                  opacity: 0;
+                  transition: all 0.3s ease-in 0.1s;
+                }
+  
+                .fa-long-arrow-alt-right {
+                  position: absolute;
+                  bottom: 56px;
+                  right: 56px;
+                  font-size: 3rem;
+                }
+              }
+            }
+  
+            h5 {
+              font-weight: 500;
+              font-size: 1.3rem;
+              margin-bottom: 1.4rem;
+            }
+  
+            p {
+              font-weight: 300;
+              font-size: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Phone
+  @media (min-width: 0px) and (max-width: 767px) {
+    .work {
+      .open-menu-icon {
+        top: -3px;
+        right: 20px;
+  
+        .fas {
+          color: white;
+        }
+      }
+  
+      .info-section {
+        padding: 10px 20px;
+        position: static;
+        .logo {
+          height: 50px;
+          width: 70px;
+          font-size: 1rem;
+        }
+  
+        .info-box {
+          display: none;
+        }
+      }
+  
+      .content-area {
+        overflow: auto;
+        height: auto;
+        margin-left: 0;
+        width: 100%;
+  
+        .img-container {
+          width: 100%;
+          padding: 56px 20px 0;
+          height: auto;
+          border-radius: 5%;
+  
+          .form-section {
+            position: static;
+            width: 100%;
+            height: auto;
+            overflow: auto;
+          }
+        }
+  
+        .work-section {
+          .project-section {
+            margin: 0;
+            width: 100%;
+            grid-template-columns: 1fr;
+  
+            .project-box {
+              .grey-bg {
+                .project-info {
+                  padding: 30px;
+  
+                  .fa-long-arrow-alt-right {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Tablet
+  @media (min-width: 768px) and (max-width: 991px) {
+    .work {
+      .info-section {
+        width: 25%;
+        padding: 20px;
+        .icon-section {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+  
+      .content-area {
+        width: 75%;
+        margin-left: 25%;
+        height: auto;
+  
+        .img-container {
+          width: 100%;
+          padding: 56px 20px 0;
+          height: auto;
+  
+          .form-section {
+            position: static;
+            width: 100%;
+          }
+        }
+  
+        .work-section {
+          .project-section {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+  
+  // Laptop
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .work {
+      .info-section {
+        width: 30%;
+        padding: 56px 30px;
+  
+        .icon-section {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+  
+      .content-area {
+        height: auto;
+  
+        .img-container {
+          padding: 56px 20px 0;
+          float: left;
+          height: auto;
+          width: 100%;
+  
+          .form-section {
+            position: static;
+            width: 100%;
+            float: left;
+            height: auto;
+          }
+        }
+  
+        .work-section {
+          .project-section {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+  
+  // Extra Large
+  @media (min-width: 1200px) and (max-width: 1499px) {
+    .work {
+      .info-section {
+        width: 30%;
+        padding: 56px 30px;
+  
+        .icon-section {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+  
+      .content-area {
+        .work-section {
+          .project-section {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+  

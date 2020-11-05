@@ -1,0 +1,336 @@
+.contact {
+  .info-section {
+    padding: 54px;
+    width: 35%;
+  }
+
+  .content-area {
+    background: $color3;
+    margin-left: 35%;
+    width: 65%;
+    background: #02A6ED;
+    height: 100%;
+
+    .img-container {
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+
+      .form-section {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        top: 56px;
+        left: -250px;
+        width: 500px;
+        height: calc(100% - 112px);
+        background: $color2;
+        color: $color3;
+        padding: 46px;
+        -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+
+        h4 {
+          font-size: 1.3rem;
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid $color5;
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+          line-height: 1.2;
+          color: $color5;
+          padding: 15px 0;
+        }
+
+        // Only make the placeholder elements uppercase.
+        input::placeholder,
+        textarea::placeholder {
+          text-transform: uppercase;
+        }
+
+        button[type="submit"] {
+          background: $color1;
+          border: none;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          border-radius: 30px;
+          text-align: center;
+          color: $color3;
+          font-size: 1rem;
+          padding: 17px 30px;
+          text-transform: uppercase;
+          width: 100%;
+          letter-spacing: 4px;
+        }
+      }
+    }
+
+    .contact-section {
+      vertical-align: top;
+      display: inline-block;
+      padding: 56px;
+      width: 70%;
+      float: left;
+
+      .contact-info {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0 0 1rem;
+
+          span {
+            color: $color1;
+          }
+        }
+
+        .contact-box {
+          max-width: 600px;
+          width: 100%;
+          padding: 30px;
+          transition: all 0.5s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            -webkit-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+            -moz-box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 20px 74px 6px rgba(0, 0, 0, 0.12);
+          }
+
+          h5 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+          }
+
+          p {
+            color: $color5;
+            font-weight: 300;
+            line-height: 1.4;
+            margin: 0 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phone
+@media (min-width: 0px) and (max-width: 767px) {
+  .contact {
+    // .info-section {
+    //   padding: 10px 20px;
+    //   position: static;
+
+    //   .logo {
+    //     height: 50px;
+    //     width: 70px;
+    //     font-size: 1rem;
+    //   }
+
+    //   .info-box {
+    //     display: none;
+    //   }
+    // }
+
+    .content-area {
+      position: relative;
+      overflow: auto;
+
+      top: 70px;
+      left: 0;
+
+      margin-left: 0;
+      width: 100%;
+
+      height: calc(100% - 70px);
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .img-container {
+        width: 100%;
+        padding: 56px 20px 0;
+        height: auto;
+
+        .form-section {
+          position: static;
+          width: 100%;
+          height: auto;
+          overflow: auto;
+        }
+      }
+
+      .contact-section {
+        width: 100%;
+        float: left;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact {
+    // .info-section {
+    //   .icon-section {
+    //     a {
+    //       font-size: 1.4rem;
+    //     }
+    //   }
+    // }
+
+    .info-section {
+      width: 30%;
+      padding: 56px 30px;
+
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content-area {
+      height: auto;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .img-container {
+        width: 83%;
+        padding: 56px 20px 0;
+        height: auto;
+
+        .form-section {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .contact-section {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact {
+    .content-area {
+      height: auto;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .img-container {
+        width: 87% !important;
+        padding: 56px 20px 0;
+        float: left;
+        height: auto;
+        width: 100%;
+
+        .form-section {
+          position: static;
+          width: 100%;
+          float: left;
+          height: auto;
+        }
+      }
+
+      .primary-btn,
+      .ghost-btn {
+        margin-bottom: 20px;
+      }
+
+      .contact-section {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+// Extra Large
+@media (min-width: 1200px) and (max-width: 1550px) {
+  .contact {
+    .info-section {
+      width: 20%;
+      padding: 56px 30px;
+
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .form-section {
+          left: -157px;
+          width: 400px;
+        }
+      }
+
+      .contact-section {
+        width: 70%;
+        float: left;
+        padding: 20% 60px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+// Extra Extra Large
+@media (min-width: 1551px) {
+  .contact {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .form-section {
+          left: -250px;
+          width: 500px;
+        }
+      }
+
+      .contact-section {
+        width: 70%;
+        float: left;
+        padding: 20% 60px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}

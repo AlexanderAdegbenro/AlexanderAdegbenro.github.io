@@ -1,0 +1,212 @@
+.home {
+  .info-section {
+    padding: 54px;
+    width: 35%;
+  }
+
+  .content-area {
+    background: $color3;
+    margin-left: 35%;
+    width: 65%;
+    background: #02A6ED;
+    height: 100%;
+
+    .img-container {
+      display: inline-block;
+      width: 30%;
+      position: relative;
+      height: 100%;
+      border-radius: 5%;
+
+      .user-img {
+        border-radius: 5%;
+        position: absolute;
+        top: 56px;
+        left: -250px;
+        width: 500px;
+        height: calc(100% - 112px);
+        background: url("https://mail.google.com/mail/u/0?ui=2&ik=5577108849&attid=0.1.1&permmsgid=msg-f:1682132902312470935&th=175822f65b54e997&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ9mLEOatKJBwlUYnnRLYTv8v_eha9xIyiKF50ratotWWxRcW5NO8raVByHjW1t3tmO0jmiMCx3yaJAYCoRZqmjC_C6J-3qXVfmuDgdAqmYRc1bk9vb942mmFJ0&disp=emb") ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+        box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+      }
+    }
+
+    .profile-section {
+      vertical-align: top;
+      display: inline-block;
+      padding: 20% 0 0 0;
+      max-width: 500px;
+
+      .profile {
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0 0 1rem;
+
+          span {
+            color: $color1;
+          }
+        }
+
+        h5 {
+          font-size: 1.1rem;
+          margin: 0 0 2rem;
+        }
+
+        p {
+          color: white;
+          font-weight: 300;
+          line-height: 1.4;
+          margin: 0 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+// Phone
+@media (max-width: 767px) {
+  .home {
+    .content-area {
+      position: relative;
+      overflow: auto;
+
+      top: 70px;
+      left: 0;
+      margin-left: 0;
+      width: 100%;
+      height: calc(100% - 70px);
+
+      .img-container {
+        padding: 56px 20px 0;
+        position: absolute;
+        height: calc(100% - 70px);
+        border-radius: 50%;
+        
+
+
+        .user-img {
+          position: static;
+          width: 100%;
+          border-radius: 50%;
+          
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  .home {
+    .info-section {
+      width: 30%;
+      padding: 56px 30px;
+
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content-area {
+      margin-left: 30%;
+      width: 70%;
+
+      .img-container {
+        padding: 56px 20px 0;
+
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .primary-btn,
+      .ghost-btn {
+        margin-bottom: 20px;
+      }
+
+      .profile-section {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+// Extra Large
+@media (min-width: 1200px) and (max-width: 1550px) {
+  .home {
+    .info-section {
+      width: 20%;
+      padding: 56px 30px;
+
+      .icon-section {
+        a {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content-area {
+      width: 80%;
+      margin-left: 20%;
+
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .user-img {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: left;
+        padding: 20% 60px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}

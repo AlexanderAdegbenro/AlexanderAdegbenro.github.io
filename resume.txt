@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+
+    <title></title>
+    <link rel="stylesheet"  href="./scss/main.css" />
+
+  </head>
+
+  <body class="resume">
+    <div class="menu-bars">
+<i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+<section id="menu">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+</section>
+
+<section class="info-section">
+  <div class="scroll-section">
+
+
+    <div class="logo"   onclick="window.location.href= 'index.html'" >Alexander</div>
+  
+
+  </div>
+<div class="info-box">
+  <h4>Email</h4>
+  <p>Adegbenroalexander15<br></p>
+  <p>@gmail.com</p>
+
+  <h4>Phone</h4>
+  <p>646-853-8208</p>
+  <h4>Find Me On</h4>
+  <div class="icon-section">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+  <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+
+  </div>
+
+</div>
+</section>
+
+<section class="content-area">
+  <div class="title">
+    <h1>Education</h1>
+  </div>
+<div class="xp-section">
+  <div class="xp-box">
+    <div class="xp-box-items">
+      <h5>Bachelors Of  Science: Computer Engineering <br> 
+       <br>   Technology</h5>
+      <p>New York City College Of Technology, NY</p>
+      <p>Session: 2016 - Dec 2020</p>
+    </div>
+
+
+  </div>
+
+
+  <div class="xp-box">
+    <div class="xp-box-items">
+      <h5>Associates Of Science :Electro Mechanical  <br> 
+        
+        <br>  Technology</h5>
+      <p>New York City College Of Technology, NY</p>
+      <p>Session: 2016-2018</p>
+    </div>
+
+
+  </div>
+  
+
+</div>
+<!-- Education Ends -->
+
+
+<!-- Work Experience Starts -->
+<div class="category">
+
+<h1>Work Experience</h1>
+<div class="xp-section">
+<div class="xp-box">
+<div class="xp-box-items">
+  <h5>Digital Girl Inc </h5>
+  <p>Adminstrative Assistant</p>
+  <p>Session: 2019-2020</p>
+</div>
+
+
+</div>
+
+
+<div class="xp-box">
+<div class="xp-box-items">
+  <h5>Digital Girl Inc</h5>
+  <p>HTML/Email Designer</p>
+  <p>Session: 2020</p>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+  </div>
+  </div>
+</section>
+
+
+<script src="https://kit.fontawesome.com/f56bafc0c7.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  src="./js/index.js"
+</script>
+  </body>
+</html>

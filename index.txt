@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="utf-8" />
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+
+  <body class="home">
+    <div class="open-menu-icon icon-properties">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="mobile-top-navigation-bar">
+      <a href="./index.html"><div class="mobile-logo">Alexander</div></a>
+      <div class="mobile-open-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+
+    <section id="opened-menu">
+      <div class="close-menu-icon icon-properties">
+        <i class="fas fa-times"></i>
+      </div>
+      <nav>
+        <a href="./index.html" class="opened-menu-btn">Home</a>
+        <a href="./work.html" class="opened-menu-btn">Portfolio</a>
+        <a href="./resume.html" class="opened-menu-btn">Resume</a>
+        <a href="./contact.html" class="opened-menu-btn">Contact</a>
+      </nav>
+    </section>
+
+    <section class="info-section" id="title">
+      <div class="logo"   onclick="window.location.href= 'index.html'" >Alexander</div>
+      <div class="info-box">
+        <h4>Email</h4>
+        <p>Adegbenroalexander15@gmail.com <br /></p>
+
+        <h4>Phone</h4>
+        <p>646-853-8208</p>
+        <h4>Find Me On</h4>
+        <div class="icon-section">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+          <a href="#"><i class="fab fa-instagram"></i></a>
+
+          <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-area">
+      <div class="image-container">
+        <div class="user-image"></div>
+      </div>
+
+      <div class="profile-section" id="title">
+        <div class="profile">
+          <h1>
+            Alexander <br />
+            <span>Adegbenro</span>
+          </h1>
+          <h5>Web Developer/ Computer Engineer</h5>
+          <h3>
+            Hi my name is Alexander Adegbenro this is my page and i am from
+            Brookyln NY. I'm baby shabby chic helvetica keffiyeh celiac
+            kale chips hoodie austin aesthetic etsy poutine subway tile.
+            Sartorial.
+            ennui
+          </h3>
+          <a href="./resume.html" class="ghost-btn">Resume</a>
+          <a href="./Work.html" class="primary-btn">Portfolio</a>
+          <a href="./contact.html" class="contact-btn">contact</a>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/f56bafc0c7.js"
+      crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript"> -->
+   <script src="./js/app.js"></script>
+     
+  </body>
+</html>
